@@ -18,3 +18,9 @@ export default props => [
 //     <h1>Parte 1</h1>
 //     <h1>Parte 2</h1>
 // </React.Fragment>
+
+//Solucao 3 - Retornando um Array
+// export default props => [
+//     <h1>Parte 1</h1>,
+//     <h1>Parte 2</h1>
+// ]

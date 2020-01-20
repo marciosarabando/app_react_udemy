@@ -16,11 +16,12 @@ const elemento = document.getElementById('root')
 ReactDOM.render(
 
     <div>
-        <MultiElementos/>
+        { /*<MultiElementos/> */ }
 
-        { /*
+        
             <CompA valor="Olá, eu sou o A"/>
             <B valor="Eu Sou o B"/>
+        { /*
             <PrimeiroComponente valor="Bom dia!!" aBcD={2**8}/> 
          */}
 
