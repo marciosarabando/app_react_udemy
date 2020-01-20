@@ -1,12 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//Importação da Biblioteca Dom do React
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//Esse import é necessário para funcionar a sintaxe JSX (html no meio do código javascript)
+import React from 'react'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import PrimeiroComponente from './componentes/PrimeiroComponente'
+
+import { CompA, CompB as B} from './componentes/DoisComponentes'
+
+import MultiElementos from './componentes/MultiElementos'
+
+//Variável com o Elemento da página onde será renderizado o conteúdo
+const elemento = document.getElementById('root')
+
+ReactDOM.render(
+
+    <div>
+        <MultiElementos/>
+
+        { /*
+            <CompA valor="Olá, eu sou o A"/>
+            <B valor="Eu Sou o B"/>
+            <PrimeiroComponente valor="Bom dia!!" aBcD={2**8}/> 
+         */}
+
+    </div>
+
+, elemento);
+
+//Variavel com conteúdo JSX 
+//const jsx = <ul><li>1) Marcio</li><li>1) Cassia</li></ul>
+
+//Renderização do Conteúdo no elemento
+//ReactDOM.render(
+//    jsx
+//, elemento);
