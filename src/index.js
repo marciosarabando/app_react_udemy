@@ -23,13 +23,16 @@ import ComponenteClasse from './componentes/ComponenteClasse'
 
 import Contador from './componentes/Contador'
 
+import Hook from './componentes/Hook'
+
 //Variável com o Elemento da página onde será renderizado o conteúdo
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
 
     <div>
-        <Contador/>
+        <Hook />
+        {/*<Contador/> */}
         {/* <ComponenteClasse valor="sou um componente de classe"/> */}
         {/* <Pai/> */}
         {/*<ComponenteComFuncao/> */}
