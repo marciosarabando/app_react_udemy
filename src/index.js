@@ -10,18 +10,35 @@ import { CompA, CompB as B} from './componentes/DoisComponentes'
 
 import MultiElementos from './componentes/MultiElementos'
 
+import FamiliaSarabando from './componentes/FamiliaSarabando'
+
+//import Familia from './componentes/Familia'
+//import Membro from './componentes/Membro'
+
+import ComponenteComFuncao from './componentes/ComponenteComFuncao'
+
 //Variável com o Elemento da página onde será renderizado o conteúdo
 const elemento = document.getElementById('root')
 
 ReactDOM.render(
 
     <div>
+        <ComponenteComFuncao/>
+        {/*
+        <Familia sobrenome="Santos" idade="123">
+            <Membro nome="Marcio" />
+            <Membro nome="Cassia" />
+        </Familia>
+        */}
+
+
         { /*<MultiElementos/> */ }
 
-        
+        { /* <FamiliaSarabando/> */ }
+        { /*
             <CompA valor="Olá, eu sou o A"/>
             <B valor="Eu Sou o B"/>
-        { /*
+        
             <PrimeiroComponente valor="Bom dia!!" aBcD={2**8}/> 
          */}
 
