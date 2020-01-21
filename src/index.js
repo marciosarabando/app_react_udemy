@@ -15,7 +15,13 @@ import FamiliaSarabando from './componentes/FamiliaSarabando'
 //import Familia from './componentes/Familia'
 //import Membro from './componentes/Membro'
 
-import ComponenteComFuncao from './componentes/ComponenteComFuncao'
+//import ComponenteComFuncao from './componentes/ComponenteComFuncao'
+
+//import Pai from './componentes/Pai'
+
+import ComponenteClasse from './componentes/ComponenteClasse'
+
+import Contador from './componentes/Contador'
 
 //Variável com o Elemento da página onde será renderizado o conteúdo
 const elemento = document.getElementById('root')
@@ -23,22 +29,21 @@ const elemento = document.getElementById('root')
 ReactDOM.render(
 
     <div>
-        <ComponenteComFuncao/>
+        <Contador/>
+        {/* <ComponenteClasse valor="sou um componente de classe"/> */}
+        {/* <Pai/> */}
+        {/*<ComponenteComFuncao/> */}
         {/*
         <Familia sobrenome="Santos" idade="123">
             <Membro nome="Marcio" />
             <Membro nome="Cassia" />
         </Familia>
         */}
-
-
         { /*<MultiElementos/> */ }
-
         { /* <FamiliaSarabando/> */ }
         { /*
             <CompA valor="Olá, eu sou o A"/>
             <B valor="Eu Sou o B"/>
-        
             <PrimeiroComponente valor="Bom dia!!" aBcD={2**8}/> 
          */}
 
